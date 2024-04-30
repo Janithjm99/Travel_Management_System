@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .2s linear;
+}
+
+*::selection{
+   background-color: #046CFD;
+   color: #fff;
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: #272C4A;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 6.5rem;
+}
+
+body{
+   background: #333;
+}
+
+section{
+   padding:3rem 2rem;
+}
+.title{
+   text-align: center;
+   margin-bottom: 2rem;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 4rem;
+}
+
+.logo{
+	margin: 0px;
+	margin-left: 28px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.logo span{
+	color: #f7403b;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #272c4a;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+}
+
+.sidenav a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color:#1b203d;
+}
+
+.sidenav{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 300px;
+}
+
+.head{
+	padding:20px;
+}
+.col-div-6{
+	width: 50%;
+	float: left;
+        color: #fff;
+}
+
+.nav2{
+	display: none;
+}
+
+.dashboard .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+   gap:3.5rem;
+   align-items: flex-start;
+   max-width: 1450px;
+   margin: 20px;
+}
+
+.dashboard .box-container .box{
+   width: 95%;
+	height: 120px;
+       
+	background-color: #272c4a;
+	margin-left: 10px;
+	padding:10px;
+}
+
+.dashboard .box-container .box p{
+   font-size: 35px;
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-top: 10px!important;
+}
+
+.dashboard .box-container .box p span{
+	font-size: 20px;
+	font-weight: 400px;
+	color: #818181;
+
+}
+
+.dashboard .box-container .box-icon{
+    font-size: 40px!important;
+    float: right;
+    margin-top: 20px!important;
+    color: #818181;
+    padding-right: 10px;
+}
+
+.btn,
+.delete-btn,
+.option-btn{
+   display: inline-block;
+   border-radius: .5rem;
+   margin-top: 1rem;
+   font-size: 1.8rem;
+   color: #fff;
+   cursor: pointer;
+   padding:1rem 3rem;
+   text-transform: capitalize;
+}
+
+.message{
+   position: sticky;
+   top:0;
+   margin:0 auto;
+   max-width: 1200px;
+   background-color: #f5f5f5;
+   display: flex;
+   align-items: center;
+   padding: 2rem;
+   gap: 1.5rem;
+   z-index: 10000;
+   justify-content: space-between;
+}
+
+.message span{
+   color: #333;
+   font-size: 2rem;
+}
+
+.message i{
+   font-size: 2.5rem;
+   color: #CD2727;
+   cursor: pointer;
+}
+
+.message i:hover{
+   transform: rotate(90deg);
+}
+
+.empty{
+   padding:1.5rem;
+   font-size: 2rem;
+   color: #CD2727;
+   border: .2rem solid #333;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   text-align: center;
+   background-color: #fff;
+   border-radius: .5rem;
+   text-transform: capitalize;
+}
+
+.btn{
+   background-color: #046CFD;
+}
+
+.delete-btn{
+   background-color: #CD2727;
+}
+
+.option-btn{
+   background-color: #D8B640;
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover{
+   background-color: #333;
+}
+
+.add-places form{
+   max-width: 50rem;
+   border-radius: .5rem;
+   background-color: #fff;
+   border: .2rem solid #333;
+   padding:2rem;
+   text-align: center;
+   margin:0 auto;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.add-places form h3{
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   color: #333;
+   margin-bottom: 1rem;
+}
+
+.add-places form .box{
+   width: 100%;
+   margin:1rem 0;
+   font-size: 1.8rem;
+   color: #333;
+   border-radius: .5rem;
+   background-color: #f5f5f5;
+   padding:1.2rem 1.4rem;
+   border: .2rem solid #333;
+}
+
+.add-places form textarea{
+   height: 15rem;
+   resize: none;
+}
+
+
+.show-places .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 40rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   max-width: 1200px;
+   margin: 0 auto;
+   justify-content: center;
+}
+
+.show-places .box-container .box{
+   text-align: center;
+   padding: 2rem;
+   border: .2rem solid #fff;
+   background-color: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   border-radius: .5rem;
+   position: relative;
+}
+
+.show-places .box-container .box .image{
+   height: 23rem;
+   margin-bottom: .5rem;
+}
+
+.show-places .box-container .box .name{
+   margin:1rem 0;
+   font-size: 2rem;
+   color: #333;
+}
+
+.show-places .box-container .box .details{
+   line-height: 1.5;
+   color: #333;
+   font-size: 2rem;
+   padding:.5rem 0;
+}
+
+.show-places .box-container .box .name i{
+  color: orange;
+}
+
+.box-container .box .price{
+  color:#666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+.box-container .box .price1{
+  color:#666;
+  font-size: 2rem; 
+}
+
+.header{
+   position: sticky;
+   top:0; left:0; right:0;
+   z-index: 1000;
+   background-color: #272C4A;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.header .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding:2rem;
+   max-width: 1200px;
+   margin:0 auto;
+   position: relative;
+}
+
+.header .flex .account-box{
+   position: absolute;
+   top:120%; right:2rem;
+   width: 33rem;
+   border-radius: .5rem;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:2rem;
+   text-align: center;
+   border: .2rem solid #333;
+   display: none;
+   animation: fadeIn .2s linear;
+}
+
+.header .flex .account-box.active{
+   display: inline-block;
+}
+
+.header .flex .account-box p{
+   padding-bottom: 1rem;
+   font-size: 2rem;
+   color: #666;
+   line-height: 1.5;
+}
+
+.header .flex .account-box p span{
+   color: #333;
+}
+
+.header .flex .account-box div{
+   font-size: 2rem;
+   margin-top: 2rem;
+   color: #666;
+}
+
+.header .flex .account-box div a{
+   color: #D8B640;
+}
+
+.header .flex .account-box div a:hover{
+   text-decoration: underline;
+}
+
+.header .flex .icons div{
+   font-size: 2.5rem;
+   margin-left: 1.7rem;
+   cursor: pointer;
+   color: white;
+}
+
+.header .flex .icons div:hover{
+  color: #f1f1f1;
+  background-color:#1b203d;
+}
+
+.header .flex .navbar a{
+  padding: 15px 8px 15px 32px;
+  font-size: 20px;
+  color: #818181;
+  
+  
+}
+
+.header .flex .navbar a:hover{
+  color: #f1f1f1;
+  background-color:#1b203d;
+}
+
+.header .flex .logo{
+   margin: 0px;
+   margin-left: 38px;
+   font-weight: bold;
+   color: white;
+   margin-bottom: 16px;
+   font-size: 32px;
+}
+
+.header .flex .logo span{
+   color: #f7403b;
+}
+
+.placed-orders .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 33rem);
+   gap: 1.5rem;
+   align-items: flex-start;
+   max-width: 1200px;
+   margin: 0 auto;
+   justify-content: center;
+}
+
+.placed-orders .box-container .box{
+   padding:2rem;
+   border: .2rem solid #333;
+   background-color: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   border-radius: .5rem;
+}
+
+.placed-orders .box-container .box p{
+   margin-bottom: 1rem;
+   font-size: 2rem;
+   color: #666;
+}
+
+.placed-orders .box-container .box p span{
+   color: #046CFD;
+}
+
+.placed-orders .box-container .box form{
+   margin-top: 1rem;
+   text-align: center;
+}
+
+.placed-orders .box-container .box form select{
+   width: 100%;
+   border: .2rem solid #333;
+   padding:1.2rem 1.4rem;
+   font-size: 1.8rem;
+   color: #333;
+   border: .2rem solid #333;
+   border-radius: .5rem;
+   margin:.5rem 0;
+}
+
+.users .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 38rem);
+   gap:1.5rem;
+   align-items: flex-start;
+   max-width: 1200px;
+   margin: 0 auto;
+   justify-content: center;
+}
+
+.users .box-container .box{
+   padding:2rem;
+   border: .2rem solid #333;
+   background-color: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   border-radius: .5rem;
+   text-align: center;
+}
+
+.users .box-container .box p{
+   font-size: 2rem;
+   color: #666;
+   margin-bottom: 1rem;
+   line-height: 1.5;
+}
+
+.users .box-container .box p span{
+   color: #046CFD;
+}
+
+.users .box-container .box .delete-btn{
+   margin-top: .5;
+}
